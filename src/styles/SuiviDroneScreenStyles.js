@@ -1,0 +1,212 @@
+import { StyleSheet, Dimensions } from "react-native";
+
+const { width, height } = Dimensions.get("window");
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#f5f5f5",
+  },
+  map: {
+    width: width,
+    height: height * 0.45,
+  },
+  infoCard: {
+    backgroundColor: "#fff",
+    borderRadius: 24,
+    marginHorizontal: 20,
+    marginTop: -30,
+    padding: 20,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 12,
+    elevation: 8,
+  },
+  statusRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 16,
+  },
+  statusDot: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: "#2DC6A0",
+    marginRight: 8,
+  },
+  statusText: {
+    fontSize: 14,
+    color: "#2DC6A0",
+    fontWeight: "700",
+  },
+  commandeId: {
+    fontSize: 18,
+    fontWeight: "800",
+    color: "#222",
+    marginBottom: 4,
+  },
+  pharmacieNom: {
+    fontSize: 13,
+    color: "#aaa",
+    marginBottom: 16,
+  },
+  statsRow: {
+    flexDirection: "row",
+    gap: 12,
+    marginBottom: 16,
+  },
+  statBox: {
+    flex: 1,
+    backgroundColor: "#f5f5f5",
+    borderRadius: 14,
+    padding: 14,
+    alignItems: "center",
+  },
+  statValue: {
+    fontSize: 20,
+    fontWeight: "800",
+    color: "#222",
+    marginBottom: 4,
+  },
+  statLabel: {
+    fontSize: 11,
+    color: "#aaa",
+    textAlign: "center",
+  },
+  progressContainer: {
+    marginBottom: 16,
+  },
+  progressLabel: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: 8,
+  },
+  progressLabelText: {
+    fontSize: 12,
+    color: "#aaa",
+  },
+  progressBar: {
+    height: 6,
+    backgroundColor: "#f0f0f0",
+    borderRadius: 3,
+    overflow: "hidden",
+  },
+  progressFill: {
+    height: "100%",
+    backgroundColor: "#2DC6A0",
+    borderRadius: 3,
+  },
+  etapeRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 12,
+  },
+  etapeDot: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    marginRight: 12,
+  },
+  etapeText: {
+    fontSize: 14,
+    color: "#333",
+    fontWeight: "500",
+    flex: 1,
+  },
+  etapeHeure: {
+    fontSize: 12,
+    color: "#aaa",
+  },
+  noCommandeContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 40,
+  },
+  noCommandeText: {
+    fontSize: 18,
+    fontWeight: "800",
+    color: "#222",
+    textAlign: "center",
+    marginTop: 16,
+    marginBottom: 8,
+  },
+  noCommandeSubText: {
+    fontSize: 14,
+    color: "#aaa",
+    textAlign: "center",
+    lineHeight: 22,
+  },
+  commanderBtn: {
+    backgroundColor: "#2DC6A0",
+    borderRadius: 50,
+    paddingVertical: 14,
+    paddingHorizontal: 32,
+    marginTop: 24,
+  },
+  commanderBtnText: {
+    color: "#fff",
+    fontSize: 15,
+    fontWeight: "700",
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    justifyContent: "flex-end",
+  },
+  modalCard: {
+    backgroundColor: "#fff",
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
+    padding: 24,
+    paddingBottom: 40,
+    alignItems: "center",
+  },
+  modalIconContainer: {
+    width: 70,
+    height: 70,
+    borderRadius: 35,
+    backgroundColor: "rgba(45,198,160,0.1)",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 16,
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: "800",
+    color: "#222",
+    marginBottom: 8,
+    textAlign: "center",
+  },
+  modalText: {
+    fontSize: 14,
+    color: "#aaa",
+    textAlign: "center",
+    lineHeight: 22,
+    marginBottom: 24,
+  },
+  modalActiverBtn: {
+    backgroundColor: "#2DC6A0",
+    borderRadius: 50,
+    paddingVertical: 14,
+    paddingHorizontal: 40,
+    width: "100%",
+    alignItems: "center",
+    marginBottom: 12,
+  },
+  modalActiverBtnText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "700",
+  },
+  modalAnnulerBtn: {
+    paddingVertical: 14,
+    alignItems: "center",
+    width: "100%",
+  },
+  modalAnnulerBtnText: {
+    color: "#aaa",
+    fontSize: 15,
+  },
+});

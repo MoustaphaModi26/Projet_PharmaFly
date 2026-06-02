@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import React, { useState } from "react";
+import { StatusBar } from "expo-status-bar";
+import SplashScreen from "./src/screens/SplashScreen";
+import AppNavigator from "./src/navigation/AppNavigator";
 
 export default function App() {
+  const [showSplash, setShowSplash] = useState(true);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar style="light" />
+      {showSplash ? (
+        <SplashScreen onFinish={() => setShowSplash(false)} />
+      ) : (
+        <AppNavigator />
+      )}
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
